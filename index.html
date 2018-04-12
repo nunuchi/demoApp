@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metro Transit</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		
+
+		var modalContent = document.getElementsByClassName('modal-content');
+
+		
+
+		function closeModal() {document.getElementById('theModal').style.display = 'none';}
+		function openModal() {
+			document.getElementById('theModal').style.display = 'block';
+			document.getElementsByClassName('modal-content')[0].style.display = 'none';
+			document.getElementsByClassName('modal-content')[1].style.display = 'block';
+
+		}
+
+		function closeMainMenu(){
+			document.getElementById('mainMenu').style.display = 'none';
+			document.getElementById('carTable').style.display = 'block';
+		}
+
+		function openMainMenu(){
+			document.getElementById('mainMenu').style.display = 'block';
+			document.getElementById('carTable').style.display = 'none';
+		}
+
+		function openReturnStuff() {
+			document.getElementById('mainMenu').style.display = 'none';
+			document.getElementById('returnStuff').style.display = 'block';
+		}
+
+		function closeReturnStuff() {
+			document.getElementById('mainMenu').style.display = 'block';
+			document.getElementById('returnStuff').style.display = 'none';
+		}
+
+
+	
+		
+
+	</script>
+</head>
+<body>
+	<div id="theModal" class="modal">
+		<div class="modal-content">
+			<p>Username</p><input type="text" id="idNumber">
+			<p>Password</p><input type="number" id="pinNumber">
+			<button onclick="closeModal()">Enter</button>
+			<p></p>
+		</div>
+		<div class="modal-content" style='display:none'>
+			<h1>User Agreement</h1>
+			<p>Are you sure you want to do this?</p>
+			<button onclick="closeModal()">confirm</button>
+		</div>
+	</div>
+
+	<div id='mainMenu'>
+		<div class='width50 animate1'><h1 onclick='closeMainMenu()'>Car List</h1></div>
+		<div class='width50 animate1'><h1 onclick='closeMainMenu()'>Reserve</h1></div>
+		<div class='width50 animate1'><h1 onclick='openReturnStuff()'>Return</h1></div>
+		<div class='width50 animate1'><h1>Options</h1></div>
+		<div class='width50 animate1'><h1>Help</h1></div>
+		<div class='width50 animate1'><h1>About</h1></div>
+	</div>
+
+	<div id='carTable' style='display:none'>
+	<table id='tableStuff'>
+		<tr>
+			<th>Car</th>
+			<th>Mileage</th>
+		</tr>
+		<tr>
+			<td>Mazda RX</td>
+			<td>9584</td>
+		</tr>
+		<tr>
+			<td>Toyota Corrola</td>
+			<td>11258</td>
+		</tr>
+		<tr>
+			<td>Rav4</td>
+			<td>100789</td>
+		</tr>
+		<tr>
+			<td>Hunday</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<button onclick="openModal()">confirm</button>
+
+	<button onclick='openMainMenu()'>Back</button>
+	</div>
+	<div id="terms&agreements">
+		
+	</div>
+
+	<div id='returnStuff'>
+		<h1>Trip Info</h1>
+		<h2>Mazda RX</h2>
+		<h2>Time Taken: 2018-17-4:00:00:00</h2>
+		<h2>Car Mileage</h2> <input type="text">
+		<button>Confirm</button><button onclick='closeReturnStuff()'>Cancel</button>
+	</div>
+</body>
+</html>
