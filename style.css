@@ -141,7 +141,7 @@ li a:hover:not(.active) {
 }
 
 .intro {
-	color: white;
+	color: black;
 	font-weight: bold;
 	text-align: center;
 	margin: 50px 300px;
