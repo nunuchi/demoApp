@@ -79,6 +79,10 @@ th, td {
 	animation-iteration-count: infinite;
 }
 
+.linkItem {
+	text-decoration: none;
+}
+
 @keyframes modalopen {
 	from {opacity: 0;}
 	to {opacity: 1;}
