@@ -6,7 +6,7 @@ html {
 
 body {
 	font-size: 2rem;
-	background-color: #5664b9;
+	background-color: #f9f9f9;
 }
 
 table {
@@ -138,4 +138,20 @@ li a:hover:not(.active) {
 
 .active {
 	background-color: #4CAF50;
+}
+
+#page-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 35px 0px 35px 0px;
+	text-align: center;
+	background-image: url('https://www.metrotransit.org/Images/MetroTransitLogo.svg'), linear-gradient(to bottom, #f9f9f9, #dceaf6);;
+	background-repeat: no-repeat, repeat;
+	color: #f9f9f9;
+	text-shadow: 2px 2px 4px #000011;
+	position: relative;
+	
 }
