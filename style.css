@@ -139,3 +139,14 @@ li a:hover:not(.active) {
 .active {
 	background-color: #4CAF50;
 }
+
+.intro {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px 300px;
+}
+
+#title{
+	text-align: center;
+}
