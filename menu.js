@@ -1,6 +1,8 @@
 
 function initialize() {
-    var carListItem = document.getElementById('carListMenu');
+
+    //Unused
+    /*var carListItem = document.getElementById('carListMenu');
 	var reserveItem = document.getElementById('reserveMenu');
 	var returnItem = document.getElementById('returnMenu');
     var optionItem = document.getElementById('optionsMenu');
@@ -24,7 +26,8 @@ function initialize() {
     });
     aboutItem.addEventListener('click', function(event) {
         document.location.href = 'about.html';
-    });
+    });*/
+
 
 }
 	
