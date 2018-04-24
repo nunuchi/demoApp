@@ -13,13 +13,6 @@ table {
 	border: 2px solid black;
 }
 
-th, td {
-	background-color: #f9f9f9;
-	padding: 0;
-	font-size: 2rem;
-
-}
-
 #returnStuff {
 	display: none;
 }
@@ -45,7 +38,7 @@ th, td {
 }
 
 .modal { /*creates a black background for the pictures*/
-	display: block;
+	display: none;
 	position: fixed;
 	
 	z-index: 1;
@@ -54,17 +47,20 @@ th, td {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(61,146,258,1);
+	background-color: rgba(100,100,100,0.8);
 }
 
 .modal-content {
-	margin: 0;
 	padding: 0;
-	position: absolute;
-	top: 35%;
-	left: 45%;
 
-	animation-name: modalopen;
+	z-index: 2;
+	background-color: beige;
+	width: 80%;
+	margin: 0 auto;
+
+	border: 2px inset;
+
+	animation-name: smoothOpen;
 	animation-duration: 1s;
 
 }
@@ -111,6 +107,11 @@ th, td {
 	background: linear-gradient(to bottom, #f2f2f2, #F5F5DC);
 	color: #3e3e3e;
 	box-shadow: 1em 1em 2em #000011;
+	border-radius: 5%;
+	border-style: inset;
+
+	font-family: Arial, sans-serif;
+	font-weight: bold;
 }
 ul {
 	list-style-type: none;
@@ -165,4 +166,35 @@ li a:hover:not(.active) {
 	text-shadow: 2px 2px 4px #000011;
 	position: relative;
 	
+}
+
+.carTable {
+	border:	none;
+	width: 100%;
+}
+
+.carTable tr, .carTable tr td, .carTable tr th {
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+#reservedTableDisplay {
+	display: none;
+}
+
+.smoothOpen {
+	animation: smoothOpen;
+	animation-duration: 1s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .width50 {
+  		width: 100%;
+  		font-size: 1.7rem;
+    }
+
+    #menuModal {
+    	left: 15%;
+    }
 }
