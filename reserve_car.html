@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="reserve_car.js"></script>
+	<title> Reserve </title>
+</head>
+<body onload="autoInit();">
+	<div id="page-header"></div>
+	<a href="#" id="reserveClick">Reserve</a>
+	<a href="#" id="cancelClick">Cancel</a>
+	<a href="menu.html">Back</a>
+	<h1>Car Reservation</h1>
+	<hr>
+	<div id="carTableDisplay" class="smoothOpen">
+	<table class="carTable">
+		<tr>
+			<th>Car ID</th>
+			<th>Car Type</th>
+			<th>Available</th>
+		</tr>
+		<tr>
+			<td>RX0001</td>
+			<td>Mazda RX</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX0002</td>
+			<td>Mazda RX</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX0003</td>
+			<td>Mazda RX</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX0004</td>
+			<td>Mazda RX</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX0005</td>
+			<td>Mazda RX</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+
+	</table>
+	</div>
+
+	<div id="reservedTableDisplay" class="smoothOpen">
+	<table class="carTable">
+		<tr>
+			<th>Car ID</th>
+			<th>Car Type</th>
+			<th>Available</th>
+		</tr>
+		<tr>
+			<td>RX0006</td>
+			<td>Toyota Carola</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX0007</td>
+			<td>Toyota Carola</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX0008</td>
+			<td>Toyota Carola</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX0009</td>
+			<td>Toyota Carola</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+		<tr>
+			<td>RX000A</td>
+			<td>Toyota Carola</td>
+			<td>Yes</td>
+			<td><button class="selectClick">Select</button></td>
+		</tr>
+
+	</table>
+	</div>
+
+	<div id="userAgreement" class="modal">
+		<div class="modal-content">
+			<h2>User Agreement</h2>
+			<h3>Date:</h3> <input type="date" id="dateInput"> 
+			<h3>Time:</h3> <input type="time" id="timeInput">
+			<p>By accepting the terms and agreement, you accept full responsibility of taking one vehicle belonging to MetroTransit as transportation. Nunc quis ullamcorper quam. Quisque gravida porttitor turpis, quis tempus lacus vulputate cursus. Nullam lobortis ut arcu sed mollis. Nulla lacinia orci quis consequat varius. Fusce sagittis varius tincidunt. Phasellus eu auctor felis. Maecenas finibus, mauris vitae iaculis mattis, urna felis fermentum enim, sed commodo eros lacus sed ex. Sed facilisis ac leo et mattis. Phasellus et suscipit urna. Etiam varius quam vel condimentum porttitor. Aenean consequat posuere nibh et accumsan. Aenean lobortis sed enim a elementum. Donec mattis fermentum consectetur.</p>
+			<p>Aliquam id neque vel mi vestibulum dictum. Suspendisse egestas enim ligula, scelerisque congue augue bibendum ut. Maecenas dapibus tristique risus, eget malesuada tellus maximus tincidunt. Ut id erat faucibus, sagittis est at, tempor leo. Nunc elementum gravida nunc, sit amet hendrerit velit iaculis at. Proin tempor massa ac volutpat lacinia. Integer viverra, felis vel tristique imperdiet, lorem ligula porta massa, dignissim bibendum nisi turpis in mi. In hac habitasse platea dictumst. Nullam ut commodo diam. Praesent mattis scelerisque lacus nec commodo.</p>
+			<button id="acceptClick">Accept</button> <button id="declineClick">Decline</button>
+		</div>
+	</div>
+		
+
+</body>
+</html>
