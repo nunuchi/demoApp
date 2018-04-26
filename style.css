@@ -96,7 +96,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-	background-color: #111;
+	/*background-color: #111;*/
 }
 
 .active {
@@ -104,6 +104,7 @@ li a:hover:not(.active) {
 }
 
 .intro {
+
 	color: blackst	;
 	font-weight: bold;
 	align-content: center;
@@ -136,13 +137,14 @@ li a:hover:not(.active) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: red;
+  background: #0053a0;
 }
+
 .navigation {
   list-style: none;
   margin: 0; 
   
-  background: red;
+  background: #0053a0;
   
   display: -webkit-box;
   display: -moz-box;
@@ -162,7 +164,8 @@ li a:hover:not(.active) {
 }
 
 .navigation a:hover {
-  background: darken(red, 2%);
+  background-color: red;
+  color: white;
 }
 
 @media all and (max-width: 800px) {
@@ -181,8 +184,8 @@ li a:hover:not(.active) {
   .navigation a { 
     text-align: center; 
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    /*border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); */
   }
 
   
