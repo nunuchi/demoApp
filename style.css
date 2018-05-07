@@ -131,7 +131,7 @@ li a:hover:not(.active) {
 	position: relative;
 	
 }
-
+/*Navigation header*/
 .flex-container  {
   display: flex;
   flex-direction: row;
@@ -162,11 +162,17 @@ li a:hover:not(.active) {
   padding: 1em;
   color: white;
 }
-
 .navigation a:hover {
   background-color: red;
   color: white;
 }
+.navigation a:visited {
+	color: black;
+}
+.navigation a:active {
+	color: blue;
+}
+
 
 @media all and (max-width: 800px) {
   .navigation {
