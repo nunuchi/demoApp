@@ -59,5 +59,5 @@ function imageModalOpen(num){//Opens the modal and show the specified image in i
 
 function removeTable(item) {
 	document.getElementsByClassName('carTable')[1].style.display = 'none';
-	alert('You\'re reservation has been canceled.');
+	alert('You\'re reservation has been cancelled.');
 }
