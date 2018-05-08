@@ -100,7 +100,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-	background-color: #4CAF50;
+	background-color: rgb(255,210,0);
 }
 
 .intro {
@@ -144,7 +144,7 @@ li a:hover:not(.active) {
   list-style: none;
   margin: 0; 
   
-  background: #0053a0;
+  background: rgb(0,83,160);
   
   display: -webkit-box;
   display: -moz-box;
@@ -162,9 +162,14 @@ li a:hover:not(.active) {
   padding: 1em;
   color: white;
 }
-.navigation a:hover {
-  background-color: red;
-  color: white;
+.navigation a:hover:not(.active) {
+  background-color: #3d87cc;
+  color: white; 
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+
 }
 .navigation a:visited {
 	color: black;
