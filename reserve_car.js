@@ -8,15 +8,18 @@ function autoInit() {
 	var	imgList = document.getElementsByClassName('imgSlide');
 	var imageModal = document.getElementById('imageModal');
 
-
 	reserveClick.addEventListener('click', function(event) {
 		document.getElementById('carTableDisplay').style.display = "block";
 		document.getElementById('reservedTableDisplay').style.display = "none";
+		cancelClick.style.borderStyle = 'outset';
+		event.target.style.borderStyle = 'inset';
 	});
 
 	cancelClick.addEventListener('click', function(event) {
 		document.getElementById('carTableDisplay').style.display = "none";
 		document.getElementById('reservedTableDisplay').style.display = "block";
+		reserveClick.style.borderStyle = 'outset';
+		event.target.style.borderStyle = 'inset';
 	});
 
 	acceptClick.addEventListener('click', function(event) {
@@ -53,3 +56,8 @@ function imageModalOpen(num){//Opens the modal and show the specified image in i
 	imageModal.style.display = 'block';
 	document.getElementsByClassName('imgSlide')[num].style.display = "block";
 }//Open Image Modal
+
+function removeTable(item) {
+	document.getElementsByClassName('carTable')[1].style.display = 'none';
+	alert('You\'re reservation has been canceled.');
+}
