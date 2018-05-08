@@ -14,7 +14,7 @@
 	</style>
 	<title> Reserve </title>
 </head>
-<body onload="autoInit();">
+<body onload='autoInit()'>
 	<div id="page-header"></div>
 	<div class="flex-container">
 		  <ul class="navigation">
@@ -55,7 +55,7 @@
 			<td><button class="selectClick">Select</button></td>
 		</tr>
 		<tr>
-			<td><img class="iconSlide" src="images/jeep.jpg" width="100vw" alt="red toyota corrola" onclick="imageModalOpen(2)"/></td>
+			<td><img class="iconSlide" src="images/jeep.jpg" width="100vw" alt="jeep" onclick="imageModalOpen(2)"/></td>
 			<td>RX0003</td>
 			<td>Jeep</td>
 			<td>Yes</td>
@@ -75,9 +75,9 @@
 		<tr>
 			<td><img class="iconSlide" src="images/white-acura-sedan.jpg" width="100vw" alt="white-acura-sedan" onclick="imageModalOpen(3)"/></td>
 			<td>RX0006</td>
-			<td>Toyota Carola</td>
+			<td>Acura Sedan</td>
 			<td>Yes</td>
-			<td><button class="selectClick">Cancel</button></td>
+			<td><button class="cancelReservationClick" onclick='removeTable(this)'>Cancel</button></td>
 		</tr>
 	</table>
 	</div>
@@ -85,7 +85,7 @@
 	<div id="imageModal">
 		<img class="imgSlide" src="images/blue-bmw-sedan.jpg" alt="blue sedan" width="50%" />
 		<img class="imgSlide" src="images/toyota-corrola.jpg" alt="red toyota corrola" width="50%"/>
-		<img class="imgSlide" src="images/white-acura-sedan.jpg"  alt="white acura sedan" width="50%"/>
+		<img class="imgSlide" src="images/jeep.jpg" alt="jeep" width="50%"/>
 		<img class="imgSlide" src="images/white-acura-sedan.jpg" alt="white-acura-sedan" width="50%"/>
 	</div>
 
